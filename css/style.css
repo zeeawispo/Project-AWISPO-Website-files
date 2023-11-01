@@ -1,83 +1,12 @@
-
-body {
-    background-color:white;
-}
-
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #c5c4c4;
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-p { font-size: 120%; color: dimgray; }
-p.important {display: inline-block;
-}
-
-
-.center { display: block; margin: auto; }
-.centertext { text-align: center; }
-figure {float: left;text-align: left;
-    font-style: italic;
-    font-size: smaller;
-    text-indent: 0;
-    border: thin silver solid;
-
-}
-figcaption{caption-side: bottom;
-}
-.item2 h3{
-
-    text-align: center;
-}
-ul li{
-    text-align: left;
-    list-style: none;
-}
-
-ul{
-    margin: 1px;
-    padding-inline-start: 10px;
-}
-div {
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-  }
-.heading{
-    color: rgb(198, 198, 198) !important;
-    color: white;
-}
-#para{
-    color: blueviolet;
-}
-
-
-.margin-b {
-margin-bottom: 10px;
-}
-body {
-  background-color: lightblue;
+/* CSS Reset (optional) */
+body, h1, h2, h3, p, ul, li, figure {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
 }
 
 .grid-container {
@@ -117,5 +46,3 @@ body {
           'footer footer footer footer footer footer';
   }
 }
-
-

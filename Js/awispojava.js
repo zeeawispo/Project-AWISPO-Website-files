@@ -44,3 +44,51 @@ console.log("the incremented number: " + incrementNum);
 function myClickFunction() {
     alert("Welcome to AWISPO");
 }
+// Sample JSON data as a string
+
+var jsonData = '{"name": "John Doe", "age": 30, "city": "New York"}';
+
+
+
+// Parsing JSON data to a JavaScript object
+
+var parsedData = JSON.parse(jsonData);
+
+
+
+// Printing the JavaScript object to the console log
+
+console.log(parsedData);
+
+
+
+// Accessing properties of the JavaScript object
+
+console.log("Name: " + parsedData.name);
+
+console.log("Age: " + parsedData.age);
+
+console.log("City: " + parsedData.city);
+
+function fun() {
+    
+   
+    $(document).ready(function () {
+  
+        console.log("HELLO");
+        // FETCHING DATA FROM JSON FILE
+       
+    $.getJSON( "launch.json", function( data ) {
+       
+       console.log(data)
+      });
+    });
+}
+
+fun()
+document.getElementById('name').textContent = data.name;
+      console.log("Name is: "+data.name)
+      document.getElementById('profession').textContent = data.profession;
+      console.log("Profession is: "+data.profession)
+      document.getElementById('experience').textContent = `Experience: ${data.experience}`;
+      console.log("Experience is: "+data.experience)
